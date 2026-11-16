@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Амина & Амир | Проводы невесты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="phone-container">
+
+        <!-- Экран 1: Закрытый конверт -->
+        <section class="envelope-screen" id="envelopeScreen">
+            <div class="ornament-top"></div>
+            <div class="envelope-box">
+                <span class="tag">СОЮЗ ДВУХ СЕРДЕЦ</span>
+                <h1 class="couple-names">Амина & Амир</h1>
+                <div class="divider"><span>✦</span></div>
+                <p class="sub-event">Проводы невесты</p>
+                <p class="tap-hint">Нажми на печать, чтобы открыть приглашение</p>
+                <button class="seal-btn" id="openBtn">А & А</button>
+            </div>
+            <div class="ornament-bottom"></div>
+        </section>
+
+        <!-- Экран 2: Основное приглашение -->
+        <main class="main-card hidden" id="mainCard">
+            
+            <header class="card-header">
+                <p class="union-title">АМИНА & АМИР</p>
+                <div class="divider"><span>✦</span></div>
+                <h2 class="event-title">Проводы Амины</h2>
+                <p class="event-date">24 АВГУСТА 2027</p>
+            </header>
+
+            <div class="image-wrapper">
+                <img src="photo1.jpg" alt="Фото" class="card-photo">
+            </div>
+
+            <p class="welcome-text">
+                Дорогие мои подруги и сестры!<br><br>
+                Совсем скоро соединятся наши судьбы с Амиром, и для меня начнётся новая, счастливая глава жизни.<br>
+                Перед этим волнительным днём я хочу собрать самых близких мне девочек в родном доме, чтобы обняться, разделить радость и провести этот тёплый вечер в кругу тех, кто дорог моему сердцу.
+            </p>
+
+            <!-- Живой таймер -->
+            <div class="timer-block">
+                <p class="block-caption">ДО НАШЕЙ ВСТРЕЧИ ОСТАЛОСЬ</p>
+                <div class="timer-row">
+                    <div class="time-cell">
+                        <span id="days">00</span>
+                        <small>дней</small>
+                    </div>
+                    <div class="time-cell">
+                        <span id="hours">00</span>
+                        <small>часов</small>
+                    </div>
+                    <div class="time-cell">
+                        <span id="minutes">00</span>
+                        <small>минут</small>
+                    </div>
+                    <div class="time-cell">
+                        <span id="seconds">00</span>
+                        <small>секунд</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Информация о месте -->
+            <div class="info-list">
+                <div class="info-item">
+                    <strong>Место встречи</strong>
+                    <span>Мой отчий дом (г. Грозный, ул. Мира, 12)</span>
+                </div>
+                <div class="info-item">
+                    <strong>Время сбора</strong>
+                    <span>Жду вас к 15:00</span>
+                </div>
+            </div>
+
+            <!-- Подтверждение через WhatsApp -->
+            <div class="rsvp-block">
+                <p class="rsvp-label">Напиши своё имя, чтобы я знала, что ты будешь рядом:</p>
+                <input type="text" id="guestName" class="guest-input" placeholder="Например: Мадина">
+                <button class="rsvp-btn" id="rsvpBtn">Подтвердить в WhatsApp</button>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
