@@ -48,7 +48,7 @@ rsvpBtn.addEventListener('click', () => {
     }
 
     const messageText = `Амина, привет! Это ${name}. Я обязательно приду на твои проводы! ✨`;
-    const whatsappUrl = `https://whatsapp.com{bridePhone}?text=${encodeURIComponent(messageText)}`;
+    const whatsappUrl = `whatsapp://send?phone=${bridePhone}&text=${encodeURIComponent(messageText)}`;
     
     window.open(whatsappUrl, '_blank');
 });
